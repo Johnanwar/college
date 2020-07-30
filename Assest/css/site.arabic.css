@@ -1,0 +1,10 @@
+﻿
+
+body {
+    direction: rtl !important;
+    box-sizing: border-box;
+    text-align: right !important;
+}
+.form-control{
+ direction: ltr;
+}

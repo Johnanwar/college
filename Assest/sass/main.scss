@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+@import "varibles";
+
+// ............................................
+.main-color {
+    color: $main-color;
+}
+
+.second-color {
+    color: $second-color;
+}
+
+.third-color {
+    color: $third-color;
+}
+
+nav{
+
+    background-color: #fff;
+    .top-nav {
+        padding: 10px 50px;
+        border-bottom: 1px solid #f8f8f8;
+        a{
+            color: #827c7c;
+            font-family: $second-font;
+            font-size: 23px;
+        }
+    }
+    .main-nav {
+        padding: 0 50px;
+        .logo img{
+            width: 100px;
+            height: 100px;
+        }
+        .main-nav-links{
+            width: 60%;
+            li a{
+                color: #333;
+                font-size: 20px;       
+               font-family: $main-font;
+               transition: $main-transation;
+            &:hover{
+                color: $main-color;
+            }
+        }
+            
+        }
+    }
+    i{
+        font-size: 16px;
+        padding: 0 5px;
+        transition: $main-transation;
+        &:hover{
+            color: $main-color;
+        }
+    }
+}
+// .................................................................................
+.home-img{
+ position: relative;
+  img{
+      height: 500px;
+  }
+  p{
+      font-family: $main-font;
+      position: absolute;
+    top: 95px;
+    right: 40px;
+    font-size: 39px;
+    color: $second-color;
+    span{
+        color: #fcb040;
+    }
+  }
+}
+// *******************************************************************************
+.second-home-section{
+    h2{
+        font-family: $main-font;
+        font-size: 40px;
+        margin-bottom: 18px;
+        // color:$main-color;
+
+    }
+    h5{
+        font-size: 18px;
+        color: #514e4e;
+        color: $third-color;
+        font-weight: bold;
+        margin-bottom: 20px;
+        font-family: $main-font;
+
+    }
+    p{
+        font-family: $second-font;
+        font-size: 17px;
+        color: #837f7a;
+
+    }
+    .about-img{
+        width: 80%;
+    }
+
+}
+// .......................................................................................
+.about-college{
+    img{
+        width: 100%;
+        height: 250px;
+        transition: .6s;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+    .col-md-3{
+        padding: 0;
+        overflow: hidden;
+    }
+    p{
+        padding: 10px;
+        font-family: $second-font;
+        font-size: 18px;
+    }
+    .back-green{
+      color: #fff;
+      background-color: $second-color;
+    }
+    .back-orng{
+        color: #fff;
+        background-color: $main-color;
+    }
+}
+// *********************************************************************
+.new-servive-container {
+    height: 420px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    transition: all .6s cubic-bezier(.3,.58,.55,1);
+}
+.new-servive-container:before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    display: block;
+    z-index: 1;
+    content: '';
+    background: linear-gradient(to bottom,rgba(15,15,15,0),rgba(15,15,15,.75) 100%);
+    transition: opacity .65s cubic-bezier(.05,.2,.1,1);
+    opacity: 0;
+}
+.new-servive-container .inner-wrap:before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    display: block;
+    z-index: 1;
+    content: '';
+    background: linear-gradient(to bottom,rgba(15,15,15,0),rgba(15,15,15,.75) 100%);
+    transition: opacity .65s cubic-bezier(.05,.2,.1,1);
+}
+.new-servive-container .overflow-inner {
+    padding: 0;
+    width: 100%;
+    align-self: flex-end;
+}
+.new-servive-container .inner-wrap {
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 20px;
+}
+.overflow-inner .header-wrap {
+    transform: translateY(0px);
+    position: relative;
+    z-index: 2;
+    transition: opacity .65s cubic-bezier(.05,.2,.1,1),transform .65s cubic-bezier(.05,.2,.1,1);
+    max-width: 80%;
+}
+.overflow-inner .header-wrap i{
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.hover-content {
+    color: #fff;
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    bottom: 30px;
+    left: 20px;
+    transform: translateY(20px);
+    width: calc(100% - 40px);
+    transition: opacity .18s cubic-bezier(.05,.2,.1,1),transform .18s cubic-bezier(.05,.2,.1,1);
+    text-transform: capitalize;
+    font-family: $main-font;
+}
+.par1 {
+    background-image: url(../images/natural-water.jpg);
+}
+.par2 {
+    background-image: url(../images/olive-oil.jpg);
+}
+.par3 {
+    background-image: url(../images/olives-on-the-plate-5931.jpg);
+}
+.par4 {
+    background-image: url(../images/selective-f-jar-3693294.jpg);
+}
+.new-servive-container:hover {
+    box-shadow: 0 25px 55px rgba(0,0,0,.22);
+}
+.new-servive-container:hover:before {
+    background-color: transparent;
+    background-image: linear-gradient(180deg,rgba(0,69,255,0) 0%,#fb7813 100%);
+    opacity: 1;
+}
+.new-servive-container:hover .inner-wrap:before {
+    opacity: 0;
+}
+.new-servive-container:hover .hover-content {
+    opacity: 1;
+    transform: translateY(0%);
+    transition: opacity .65s cubic-bezier(.05,.2,.1,1) .15s,transform .65s cubic-bezier(.05,.2,.1,1) .15s;
+}
+.new-servive-container:hover .header-wrap {
+    transform: translateY(-100px);
+}
+// ......................................................................................../..
+.certficate{
+    .swiper-slide{
+        text-align: center;
+        // box-shadow: 1px 1px 2px 4px #eee, -1px -1px 10px 10px #eee;
+        margin-top: 20px;
+        padding: 5px 0;
+        border-radius: 7px;
+        border: 1px solid #eee;
+    }
+    .swiper-button-prev, .swiper-button-next{
+        background-image:unset!important;
+        top: 8px;
+        font-size: 25px;
+        transition: .6s;
+        &:hover{
+            color: $main-color;
+        }
+    }
+    .swiper-button-next{
+        right: 70px!important;
+    }
+    .swiper-button-prev{
+        right: 25px!important;
+    }
+}
+// ..............................................................
+footer{
+        background-color: $third-color;
+        .footer-message {
+            color: #fff;
+            padding: 20px 0;
+            font-family: $main-font;
+            font-weight: bold;
+            h4{
+                font-size: 45px;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+    .main-footer{
+        background-color: #2e2d2a;
+    }
+.footer-info{
+    h4{
+        color: $second-color;
+        font-family: $main-font;
+        margin-bottom: 20px;
+    }
+    p{
+        transition: .6s;
+        color: #fff;
+        font-family: $second-font;
+        font-weight: bold;
+
+        a{
+          color: #fff; 
+          &:hover{
+              text-decoration: underline;
+              color: $second-color;
+          } 
+        }
+        i{
+            padding: 0 10px;
+            color: $second-color;
+        }
+    }
+}
+    .social-footer{
+        text-align: center;
+        i{
+            color: $second-color;
+            padding: 0 12px;
+            font-size: 25px;
+            transition: .7s;
+            &:hover{
+              color: #fff;
+              transform: rotate(360deg);
+            }
+         }
+    }
+    hr{
+        border-color: $main-color;
+    }
+    .copyright{
+        p{
+            text-align: center;
+            color: #fff;
+            font-size: 22px;
+            font-family: $second-font;
+            padding-bottom: 15px;
+            a{
+                color:$second-color;
+                font-weight: bold;
+            }
+        }
+    }
+
+}
