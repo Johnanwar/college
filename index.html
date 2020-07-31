@@ -13,16 +13,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Harmattan&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="Assest/css/main.css" />
-  <link rel="stylesheet" href="Assest/css/swiper.min.css" />
+  <!-- <link rel="stylesheet" href="Assest/css/swiper.min.css" /> -->
 
 </head>
 
 <body>
   <!-- ----------------------------------------------------------------------------- -->
 
-  <nav>
-
-
+  <nav class="desctop-nav">
     <div class="main-nav d-flex justify-content-between align-items-center">
       <div class="main-nav-links">
         <ul class="list-unstyled d-flex justify-content-between">
@@ -38,15 +36,46 @@
       </div>
     </div>
   </nav>
+
+      <!-- staaaaaaaaaaaaaart naaaaaaaaaaaaav baaaaaaaaaaaaaar for mobile -->
+      <nav class="mobile-nav">
+        <div class="nav-head d-flex justify-content-between">
+          <div id="togglmenu"><i class="fas fa-bars"></i></div>
+          <div class="">
+              <a href="index.html"> <img class="logo trans img-responsive" src="./Assest/images/logo.jpg" alt=" logo"></a>
+            
+          </div>
+      
+        </div>
+        <div class="mobile-nav-content">
+          <div class="d-flex justify-content-between nav-content-head align-items-center px-4">
+            <div id="closemenu"> <i class="fas fa-times"></i></div>
+            <a href="index.html"> <img class="logo trans img-responsive" src="./Assest/images/logo.jpg" alt=" logo"></a>
+          </div>
+          <div class="mobile-links">
+            <ul class="navbar-links">
+          
+        <li> <a href="">الرئيسية</a> </li>
+        <li> <a href="">كورساتنا</a> </li>
+        <li> <a href=""> طلب التحاق</a> </li>
+        <li> <a href=""> من نحن</a> </li>
+        <li> <a href=""> إتصل بنا </a> </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- endddd naaaaaaaaaaaaav baaaaaaaaaaaaaar for mobile -->
   <!-- ----------------------------------------------------------------------------- -->
   <section class="home-slider mb-3 text-center">
     <div class="home-img">
       <img src="./Assest/images/paner.jpg" alt="" class="img-fluid w-100">
-      <p class="home-text"> <i class="fas fa-quote-right main-color"></i> اما انت فاثبت على ما تعلمت وايقنت عارفا ممن
-        تعلمت <i class="fas fa-quote-left main-color"></i>
-
-        <span class="d-block mt-4">(2تي 14:3)</span>
-      </p>
+      <div class="home-text">
+        <p> <i class="fas fa-quote-right main-color"></i> اما انت فاثبت على ما تعلمت وايقنت عارفا ممن
+          تعلمت <i class="fas fa-quote-left main-color"></i>
+        
+          <span class="d-block mt-4">(2تي 14:3)</span>
+        </p>
+      </div>
     </div>
 
 
@@ -94,7 +123,7 @@
           </div>
         </div>
         <div class="col-md-6 text-right ">
-          <img class="about-img" src="./Assest/images/college.jpg" alt="" class="img-fluid">
+          <img class="about-img" src="./Assest/images/21513.jpg" alt="" class="img-fluid">
 
         </div>
 
@@ -144,10 +173,10 @@
               <div class="d-flex">
                 <img src="./Assest/images/4.jpg" alt="" class="img-fluid">
                 <div class="p-3">
-                  <h5>تاريخ الكنيسه </h5>
+                  <h5> <i class="fas fa-book"></i> تاريخ الكنيسه </h5>
                   <p> <i class="fas fa-calendar-alt"></i> 16-6-2018</p>
                   <span class="number-students"> <i class="fas fa-user-friends"></i> 124 طالب </span>
-
+          
                 </div>
               </div>
             </div>
@@ -190,8 +219,8 @@
 
 
       </div>
-      <div class="text-center mt-5 mb-3">
-        <p class="home-text"> <i class="fas fa-quote-right main-color"></i>
+      <div class="text-center my-3">
+        <p class="home-text more-text"> <i class="fas fa-quote-right main-color"></i>
           <a href="">المزيد من الكورسات</a>
           <i class="fas fa-quote-left main-color"></i>
 
@@ -215,21 +244,21 @@
         <div class="col-md-3 col-6 my-2">
           <div class="fun-fact counter-part">
             <i class="fas fa-user-graduate"></i>
-            <div class="timer" data-count="330" data-speed="5000">30000</div>
+            <div class="timer" data-count="3000" data-speed="5000">30000</div>
             <span class="medium"> طالب </span>
           </div>
         </div>
         <div class="col-md-3 col-6 my-2">
           <div class="fun-fact counter-part">
             <i class="fas fa-chalkboard-teacher"></i>
-            <div class="timer" data-count="330" data-speed="5000">600</div>
+            <div class="timer" data-count="600" data-speed="5000">600</div>
             <span class="medium"> كورس </span>
           </div>
         </div>
         <div class="col-md-3 col-6 my-2">
           <div class="fun-fact counter-part">
             <i class="fas fa-users"></i>
-            <div class="timer" data-count="330" data-speed="5000">160</div>
+            <div class="timer" data-count="160" data-speed="5000">160</div>
             <span class="medium"> معلم </span>
           </div>
         </div>
@@ -482,10 +511,10 @@
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-  <script src="Assest/js/swiper.min.js"></script>
+    </script> -->
+  <!-- <script src="Assest/js/swiper.min.js"></script> -->
   <script src="Assest/js/main.js"></script>
 
 </body>

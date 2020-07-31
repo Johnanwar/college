@@ -53,6 +53,10 @@ a:hover {
   color: #fcb040;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 nav {
   background-color: #fff;
 }
@@ -112,16 +116,18 @@ nav i:hover {
   height: 500px;
 }
 
-.home-img p {
+.home-img .home-text {
+  text-align: center;
   font-family: "Amiri", serif;
   position: absolute;
   top: 95px;
-  right: 40px;
+  right: 85px;
   font-size: 39px;
   color: #ffde15;
+  max-width: 600px;
 }
 
-.home-img p span {
+.home-img .home-text span {
   color: #fcb040;
 }
 
@@ -132,10 +138,9 @@ nav i:hover {
 }
 
 .second-home-section h5 {
-  font-size: 18px;
-  color: #514e4e;
+  font-size: 21px;
   color: #fcb040;
-  font-weight: bold;
+  font-weight: bolder;
   margin-bottom: 20px;
   font-family: "Amiri", serif;
 }
@@ -143,7 +148,6 @@ nav i:hover {
 .second-home-section p {
   font-family: "Harmattan", sans-serif;
   font-size: 17px;
-  color: #837f7a;
 }
 
 .second-home-section .about-img {
@@ -304,6 +308,14 @@ nav i:hover {
   font-family: "Harmattan", sans-serif;
 }
 
+.more-text a {
+  color: #ffde15;
+  text-decoration: underline;
+  font-weight: bolder;
+  font-family: "Harmattan", sans-serif;
+  font-size: 20px;
+}
+
 .course-card {
   -webkit-box-shadow: -2px 6px 18px 3px rgba(0, 0, 0, 0.08);
           box-shadow: -2px 6px 18px 3px rgba(0, 0, 0, 0.08);
@@ -331,12 +343,25 @@ nav i:hover {
 .course-card i {
   color: #8cc63e;
   padding-left: 5px;
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 
 .course-card img {
+  -webkit-transition: .6s;
+  transition: .6s;
   width: 120px;
   height: 120px;
   border-radius: 0 5px  5px 0;
+}
+
+.course-card:hover i {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.course-card:hover img {
+  opacity: .7;
 }
 
 .about-section h4, .about-section h5 {
@@ -621,5 +646,56 @@ footer .copyright p {
 footer .copyright p a {
   color: #ffde15;
   font-weight: bold;
+}
+
+@media screen and (max-width: 668px) {
+  .mobile-nav {
+    display: block;
+  }
+  .mobile-nav .nav-head {
+    background-color: #fff;
+    padding: 10px 30px;
+    font-size: 25px;
+    border-bottom: 1px solid #ccc;
+  }
+  .mobile-nav .logo {
+    width: 77px;
+    height: 63px;
+  }
+  .mobile-nav .mobile-nav-content {
+    position: fixed;
+    top: 0;
+    right: -1000px;
+    background-color: white;
+    z-index: 9999999999999999999;
+    width: 100vw;
+    -webkit-transition: 1s;
+    transition: 1s;
+    height: 80vh;
+  }
+  .mobile-nav .mobile-nav-content li {
+    padding: 15px;
+    font-family: "Amiri", serif;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .mobile-nav .mobile-nav-content li a {
+    text-decoration: underline;
+    color: #000;
+  }
+  .home-img .home-text {
+    width: 61%;
+    right: 0%;
+    font-size: 30px;
+  }
+  .desctop-nav {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 90%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

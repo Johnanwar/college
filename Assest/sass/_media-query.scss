@@ -1,41 +1,56 @@
 
 @media screen and (max-width: 668px) {
-        .welcome-text .welcom-img::after{
-        display: none;
-    }
+   .mobile-nav{
+       display: block;
+       .nav-head {
+    background-color: #fff;
+    padding: 10px 30px;
+    font-size: 25px;
+border-bottom: 1px solid #ccc;
 
-    .home-panner {
-        .panner-text {
-
-            right: 10%;
-            max-width: 80%;
-            text-align: center;
+}
+.logo{
+ width: 77px;
+    height: 63px;
+}
+.mobile-nav-content {
+    position: fixed;
+    top: 0;
+    right: -1000px;
+    background-color: white;
+    z-index: 9999999999999999999;
+    width: 100vw;
+    transition: 1s;
+    height: 80vh;
+    li{
+        padding: 15px;
+        
+        font-family:$main-font ;
+        font-size: 20px;
+        font-weight: bold;
+        a{
+            text-decoration: underline;
+            color: #000;
         }
     }
-    .find-church {
-        padding: 10px 0;
-    }
-    .login .login-form {
-        width: 90%;
-    }
-    .home-panner  {
-     .form-search{
-        padding: 0px 20px;
-        .btn-reserve{
-            margin-top: 0px;
-        }
-     }
-    }
-    nav{
-        padding: 5px!important;
-    }
-    .contact-request-form{
-        width: 100%!important;
-    }
-    .navbar-light .navbar-toggler {
-        color: rgb(255, 189, 17);
-        border-color: rgb(255, 189, 17);
-    }
+   
+}
+
+
+   }
+
+   .home-img{
+  .home-text{
+     width: 61%;
+    right: 0%;
+    font-size: 30px;
+}
+} 
+
+   .desctop-nav{
+       display: none;
+   }
+
 }
 @media (min-width: 1200px){
     .container {
