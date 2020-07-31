@@ -16,9 +16,8 @@
 .mobile-nav{
     display: none;
 }
-
-nav{
-
+.desctop-nav{
+    // border-bottom: 1px solid #eee;
     background-color: #fff;
     .top-nav {
         padding: 10px 50px;
@@ -58,6 +57,8 @@ nav{
         }
     }
 }
+
+
 // .................................................................................
 .home-img{
  position: relative;
@@ -523,5 +524,86 @@ footer{
 
 }
 
+// .............appy page................................................
+.apply{
+    form{
+    border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 6px;
+    font-family: $second-font;
+    label{
+        // font-size: 22px;
+        font-weight: bold;
+        i{
+            color: $main-color;
+            padding: 0 10px;
+        }
+    }
+    a{
+        text-decoration: underline;
+    color: #fcb040;
+    font-weight: bold;
+    }
+    .btn{
+            background-color: $main-color;
+    padding: 3px 22px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    border:1px solid $main-color;
+    transition: .6s;
+    &:hover{
+        background-color: #fff;
+        color: $main-color;
+    }
+    }
+}   
+}
+// ......courses paaage..............................
+.course-card-detail{
+    box-shadow: -2px 6px 18px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    font-family: $second-font;
+        .btn{
+    padding: 3px 22px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #fff;
+        color: $main-color;
+    border:1px solid $main-color;
 
+
+    transition: .6s;
+    &:hover{
+     color: #fff;
+      background-color: $main-color;
+
+    }
+    }
+    h5{
+        font-size: 25px;
+    }
+    p{
+        font-size: 17px;
+    }
+    i{
+        color:$main-color;
+        padding: 0 5px;
+    }
+    img{
+        height: 300px;
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+    }
+    .small-data{
+        position: absolute;
+    top: 283px;
+    background-color: $second-color;
+    width: 90%;
+    padding: 6px;
+    border-radius: 10px;
+    right: 5%;
+    color: #fff;
+    }
+}
 @import "media-query";

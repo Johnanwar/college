@@ -24,6 +24,10 @@ a:hover{
     outline: none;
     border-color: #eee!important;
 }
+.form-control:focus{
+  
+    border-color: $second-color!important;
+}
 .btn{
     transition: $main-transation;
 }
