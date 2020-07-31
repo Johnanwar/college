@@ -691,6 +691,15 @@ footer .copyright p a {
   .desctop-nav {
     display: none;
   }
+  .last-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .last-footer .copyright {
+    margin: 20px 0;
+  }
 }
 
 @media (min-width: 1200px) {

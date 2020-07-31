@@ -50,6 +50,12 @@ border-bottom: 1px solid #ccc;
    .desctop-nav{
        display: none;
    }
+   .last-footer{
+       flex-direction: column;
+       .copyright{
+           margin:20px 0;
+       }
+   }
 
 }
 @media (min-width: 1200px){
