@@ -248,6 +248,129 @@ nav i:hover {
   color: #fff;
 }
 
+.course-card-main {
+  -webkit-box-shadow: -2px 6px 18px 3px rgba(0, 0, 0, 0.08);
+          box-shadow: -2px 6px 18px 3px rgba(0, 0, 0, 0.08);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  border-radius: 5px;
+  color: #000;
+  position: relative;
+}
+
+.course-card-main img {
+  width: 100%;
+  max-height: 500px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.course-card-main .new-course-cotent {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border-radius: 0px 5px 5px 0;
+}
+
+.course-card-main i {
+  color: #8cc63e;
+  padding-left: 5px;
+}
+
+.course-card-main::before {
+  content: '';
+  position: absolute;
+  z-index: 9;
+  width: 10px;
+  height: 10px;
+  top: -1px;
+  right: -1px;
+  border-left: 108px solid transparent;
+  border-top: 109px solid #8cc63e;
+  overflow: hidden;
+}
+
+.course-card-main .new {
+  position: absolute;
+  top: 12px;
+  right: 1px;
+  color: #fff;
+  z-index: 99999;
+  font-size: 30px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  font-family: "Harmattan", sans-serif;
+}
+
+.course-card {
+  -webkit-box-shadow: -2px 6px 18px 3px rgba(0, 0, 0, 0.08);
+          box-shadow: -2px 6px 18px 3px rgba(0, 0, 0, 0.08);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  border-radius: 5px;
+  color: #000;
+}
+
+.course-card h5 {
+  font-family: "Amiri", serif;
+}
+
+.course-card .number-students {
+  font-family: "Harmattan", sans-serif;
+  color: #ccc;
+}
+
+.course-card p {
+  font-family: "Harmattan", sans-serif;
+  color: #ccc;
+  margin-bottom: 0;
+}
+
+.course-card i {
+  color: #8cc63e;
+  padding-left: 5px;
+}
+
+.course-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 0 5px  5px 0;
+}
+
+.about-section h4, .about-section h5 {
+  font-family: "Amiri", serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.about-section p {
+  font-family: "Harmattan", sans-serif;
+  font-size: 20px;
+}
+
+.about-section span.anout-number {
+  width: 100px;
+  height: 100px;
+  background: #ffde15;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 800;
+  font-size: 50px;
+  text-align: center;
+  color: #fff;
+  float: left;
+  margin-right: 32px;
+}
+
 .new-servive-container {
   height: 420px;
   border-radius: 5px;
@@ -300,6 +423,11 @@ nav i:hover {
       align-self: flex-end;
 }
 
+.header-wrap h2 {
+  color: #fff;
+  font-family: "Amiri", serif;
+}
+
 .new-servive-container .inner-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -332,7 +460,7 @@ nav i:hover {
   opacity: 0;
   position: absolute;
   z-index: 2;
-  bottom: 30px;
+  bottom: 20px;
   left: 20px;
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
@@ -346,19 +474,19 @@ nav i:hover {
 }
 
 .par1 {
-  background-image: url(../images/natural-water.jpg);
+  background-image: url(../images/1.jpg);
 }
 
 .par2 {
-  background-image: url(../images/olive-oil.jpg);
+  background-image: url(../images/2.jpg);
 }
 
 .par3 {
-  background-image: url(../images/olives-on-the-plate-5931.jpg);
+  background-image: url(../images/3.jpg);
 }
 
 .par4 {
-  background-image: url(../images/selective-f-jar-3693294.jpg);
+  background-image: url(../images/4.jpg);
 }
 
 .new-servive-container:hover {
@@ -390,34 +518,14 @@ nav i:hover {
 .new-servive-container:hover .header-wrap {
   -webkit-transform: translateY(-100px);
           transform: translateY(-100px);
+  margin-bottom: 25px;
 }
 
-.certficate .swiper-slide {
-  text-align: center;
-  margin-top: 20px;
-  padding: 5px 0;
-  border-radius: 7px;
-  border: 1px solid #eee;
-}
-
-.certficate .swiper-button-prev, .certficate .swiper-button-next {
-  background-image: unset !important;
-  top: 8px;
-  font-size: 25px;
-  -webkit-transition: .6s;
-  transition: .6s;
-}
-
-.certficate .swiper-button-prev:hover, .certficate .swiper-button-next:hover {
-  color: #8cc63e;
-}
-
-.certficate .swiper-button-next {
-  right: 70px !important;
-}
-
-.certficate .swiper-button-prev {
-  right: 25px !important;
+.heading h4 {
+  font-family: "Amiri", serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .line {
